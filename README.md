@@ -11,7 +11,7 @@ It builds intermediate artifacts (index → embeddings/clusters → cleaned text
 
 - `Legal_Summarization_Pipeline.ipynb` *(rename your notebook to this if you want)*  
   End-to-end phases:
-  1. **Phase 0:** Build dataset index (cap train to **1500** cases)
+  1. **Phase 0:** Build dataset index (cap train to **4500** cases)
   2. **Phase 1:** Sentence embeddings + **KMeans clustering (K=6)**
   3. **Phase 2:** Text cleaning + save cleaned judgments
   4. **Phase 3:** Discourse structuring into canonical sections
@@ -64,12 +64,12 @@ The notebook writes all artifacts to:
 ## Outputs (artifacts written by the notebook)
 
 ### Indexes
-- `cases_index_indabs_1500.csv` (Phase 0)
-- `cases_index_indabs_1500_phase1.csv` (adds `cluster_id`, `cluster_label`)
-- `cases_index_indabs_1500_phase2.csv` (adds `cleaned_path`)
-- `cases_index_indabs_1500_phase3.csv` (adds `structured_path`)
-- `cases_index_indabs_1500_phase4.csv` (adds `chunked_path`, `num_chunks`)
-- `cases_index_indabs_1500_phase5.csv` (adds `skeleton_path`, `num_skeleton_sentences`)
+- `cases_index_indabs_4500.csv` (Phase 0)
+- `cases_index_indabs_4500_phase1.csv` (adds `cluster_id`, `cluster_label`)
+- `cases_index_indabs_4500_phase2.csv` (adds `cleaned_path`)
+- `cases_index_indabs_4500_phase3.csv` (adds `structured_path`)
+- `cases_index_indabs_4500_phase4.csv` (adds `chunked_path`, `num_chunks`)
+- `cases_index_indabs_4500_phase5.csv` (adds `skeleton_path`, `num_skeleton_sentences`)
 
 ### Embeddings / clustering (Phase 1)
 - `phase1_embeddings_train.npy`, `phase1_embeddings_test.npy`
